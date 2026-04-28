@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Delivery - Checkout</title>
+
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link
+    href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap)"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">
+          <strong>Coffee</strong>
+          <small>Delivery</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <div class="location-badge">
+          <span>📍</span>
+          New York, NY
+        </div>
+
+        <a href="checkout.html" class="header-cart active">
+          🛒
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-main">
+    <div class="container checkout-layout">
+      <section class="checkout-left">
+        <h1>Complete your order</h1>
+
+        <div class="checkout-box">
+          <div class="box-heading">
+            <span class="box-icon yellow-icon">📍</span>
+            <div>
+              <h2>Delivery Address</h2>
+              <p>Enter the address where you want to receive your order</p>
+            </div>
+          </div>
+
+          <form class="address-form">
+            <input class="w-small" type="text" placeholder="ZIP code">
+            <input class="w-full" type="text" placeholder="Street">
+
+            <div class="form-row">
+              <input type="text" placeholder="Number">
+              <input type="text" placeholder="Complement">
+              <input type="text" placeholder="Optional">
+            </div>
+
+            <div class="form-row">
+              <input type="text" placeholder="District">
+              <input type="text" placeholder="City">
+              <input type="text" placeholder="State">
+            </div>
+          </form>
+        </div>
+
+        <div class="checkout-box">
+          <div class="box-heading">
+            <span class="box-icon purple-icon">💳</span>
+            <div>
+              <h2>Payment</h2>
+              <p>Payment is made on delivery. Choose the payment method you prefer.</p>
+            </div>
+          </div>
+
+          <div class="payment-methods">
+            <button class="payment-btn selected">💳 Credit Card</button>
+            <button class="payment-btn">🏦 Debit Card</button>
+            <button class="payment-btn">💵 Cash</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="checkout-right">
+        <h1>Selected coffees</h1>
+
+        <div class="order-card">
+          <div class="order-product">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=180&q=80" alt="Traditional Espresso">
+
+            <div class="order-info">
+              <p>Traditional Espresso</p>
+
+              <div class="order-actions">
+                <div class="counter">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+
+                <button class="remove-btn">🗑 Remove</button>
+              </div>
+            </div>
+
+            <strong>$ 3.90</strong>
+          </div>
+
+          <div class="order-product">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=180&q=80" alt="Latte">
+
+            <div class="order-info">
+              <p>Latte</p>
+
+              <div class="order-actions">
+                <div class="counter">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+
+                <button class="remove-btn">🗑 Remove</button>
+              </div>
+            </div>
+
+            <strong>$ 7.80</strong>
+          </div>
+
+          <div class="order-summary">
+            <div>
+              <span>Items total</span>
+              <strong>$ 11.70</strong>
+            </div>
+
+            <div>
+              <span>Delivery</span>
+              <strong>$ 2.50</strong>
+            </div>
+
+            <div class="summary-total">
+              <span>Total</span>
+              <strong>$ 14.20</strong>
+            </div>
+          </div>
+
+          <a href="success.html" class="confirm-btn">Confirm Order</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+</body>
+</html>
